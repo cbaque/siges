@@ -1,0 +1,163 @@
+.a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #D5D2B3;
+	border: 1px solid #000000;
+	height: 25px;
+	width: 60px;
+
+
+}
+.reprobadas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-color: #F5BFBC;
+	border: 1px solid #000000;
+	height: 25px;
+	width: 60px;
+
+
+}
+.notomadas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-color: #CCCCCC;
+	border: 1px solid #000000;
+	height: 25px;
+	width: 60px;
+
+
+}
+.portomar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-color: #FFCC33;
+	border: 1px solid #000000;
+	height: 25px;
+	width: 60px;
+
+
+}
+.cajamateria {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border: thin solid #F1F1F1;
+}
+.enlace {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+}
+.cajasregistro {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	border: 1px solid #999999;
+	background-color: #FFFFFF;
+	height: 18px;
+
+
+}
+.registradas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #006600;
+	border: 1px solid #000000;
+	height: 25px;
+	width: 60px;
+
+
+}
+.cajaciclo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: none;
+	border: 1px solid #F1F1F1;
+	background-color: #F1F1F1;
+
+}
+.prueba {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: none;
+	border: 0px solid #F1F1F1;
+	background-color: #FFFFCC;
+
+
+}
+.cajasViewNotas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	height: 16px;
+	border: 1px solid #CCCCCC;
+}
+.listavalores {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	text-decoration: none;
+	height: 15pt;
+	width: 150px;
+	font-style: normal;
+
+
+
+}
+.tabnotas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #FFFFCC;
+	text-decoration: none;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #660000;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: bold;
+	color: #CCCCCC;
+	text-decoration: none;
+}
+.estadolibros {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	height: 20px;
+	width: 200px;
+	border: 1px solid #FFFFCC;
+	text-decoration: none;
+	background-color: #FFFFCC;
+	color: #333333;
+
+
+}
+.estudiantesinscritos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration: none;
+	width: 200px;
+	height: 15pt;
+	font-weight: normal;
+	font-style: normal;
+
+
+}

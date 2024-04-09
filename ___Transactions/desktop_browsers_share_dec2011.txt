@@ -1,0 +1,8 @@
+Nuevo, 33.3
+Detenido, 26.5
+Incumplido, 25.4
+Atrasado, 7.0
+Sin reporte, 4.6
+En ejecucion, 3.2
+En Validacion, 3.2
+En Espera, 3.2

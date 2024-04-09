@@ -1,0 +1,293 @@
+form	{
+	border:0px;
+	margin:0px;
+}
+.textos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	color: #666666;
+
+}
+.textos_azul,.textos_azul:visited {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: bold;
+	color: #2C5CA4;
+}
+.normalFont{
+	font-weight:normal;
+}
+
+.boldFont{
+	font-weight:bold;
+}
+.textos_noticia {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #3A495A;
+}
+.textos_links_sup {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none;
+}
+.textos_nivel_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #2C5CA4;
+}
+.textos_naranja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-weight: normal;
+	color: #FD7C37;
+}
+.subtitulos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #333333;
+}
+.subtitulos_1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #5F9EC4;
+}
+.subtitulos_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #3A495A;
+}
+.subtitulos_2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #3A495A;
+}
+.compania {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 7pt;
+	line-height: normal;
+	font-weight: normal;
+	color: #666666;
+
+}
+.titulos {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #333333;
+
+}
+.titulos_blanco {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #ffffff;
+
+}
+.destacado2 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: italic;
+	line-height: normal;
+	font-weight: bold;
+	color: #FF9900;
+}
+.titulosverde {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #00CC00;
+	text-align: left;
+}
+INPUT, TEXTAREA, SELECT {
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 10px;
+	COLOR: #000000;
+	FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	BACKGROUND-COLOR: #ffffff
+}
+.tabla1 {
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #9EA1A1;
+	border-left-color: #9EA1A1;
+}
+.objbgcolor {
+	background-color: #F7F7F7;
+}
+.tabla_lados {
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #DAE2E3;
+}
+.donde {
+	border-bottom-width: 6px;
+	border-bottom-style: solid;
+	border-bottom-color: #DAE2E3;
+}
+
+.newFileCss{
+	position: absolute;
+	visibility: hidden;
+	z-index: 100;
+}
+
+.submenu{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	color: #666666;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #DAE2E3;
+}
+
+.submenu_over{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	line-height: normal;
+	color: #666666;
+	background-color: #CECECE;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #DAE2E3;
+}
+
+.verdanabasicarojo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	color: #FE000C;
+}
+
+.verdanabasica {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: normal;
+	color: #333333;
+}
+
+.verdanatitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	line-height: normal;
+	color: #FE000C;
+	font-weight: bold;
+}
+
+.verdanasubtitulo {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	color: #333333;
+}
+
+.titulo_gris {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+}
+.texto_gris {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #BDBDBD;
+}
+.creditos {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #333333;
+}
+
+/* MENU */
+.menu_option	{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	height:30px;
+
+	color:#333333;
+	background-color:#FFFFFF;
+}
+.menu_option_over	{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	height:30px;
+	
+	color:#FF0000;
+	background-color:#EEEEEE;
+}
+.option	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration:none;
+	color: #333333;
+}
+.option_over	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-decoration:none;
+	color: #000000;
+	background-color:#CCCCCC;
+}
+
+/* PATH */
+.ruta, .ruta:visited	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration:none;
+	color: #333333;
+}
+.ruta:hover	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration:none;
+	color: #FF2222;
+}
+.ruta_over, .ruta_over:visited	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration:none;
+	color: #FF2222;
+}
+.ruta_over:hover	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	text-decoration:none;
+	color: #000000;
+}

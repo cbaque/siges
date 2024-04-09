@@ -1,0 +1,547 @@
+/* CSS Document */
+
+<STYLE>
+ .textfield {background: #FFFFFF;font-family: Verdana; font-size:9px}
+ .textfieldh{
+	font-family: Verdana;
+	font-size:8pt;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #CCCCCC;
+	background-color: #F4F4F4;
+	width: 250px;
+
+
+} 
+
+ .etiquetaHorizontal{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:8pt;
+	color: #000000;
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: capitalize;
+
+} 
+</STYLE>
+
+.virtualcss {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	color: #FF0000;
+}
+.etiquetas {
+	width: 8em;
+	float: left;
+	text-align: right;
+	margin-right: 0.5em;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	font-style: normal;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	text-transform: capitalize;
+	background-position: left;
+}
+
+
+.boton{
+	color: #ffffff;
+	background: #006699;
+	border: 1px solid #999999;
+	margin-left: 5.3em;
+	background-position: left;
+}
+
+}
+.headerorder2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	background-color: #FFFFFF;
+}
+
+.celdasTabla {
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:8pt;
+	background-color: #F1F1F1;
+}
+.TituloGrid {
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	font-size: 12px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #333333;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #333333;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #333333;
+	border-left-color: #333333;
+	height: 14px;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+}
+.mnuOrdeDetail1 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+
+}
+.factLblSubtotal {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+.factLblIva {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #FFFFFF;
+
+}
+.factLblTotalCompra {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+.factSubTotal {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	background-color: #FFFFFF;
+}
+.factIva {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+
+}
+.factTotalCompra {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+.factInteres {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+.factLblInteres {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+
+}
+.factLblShipCost {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+}
+.factShipCost {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-bottom: 0px solid;
+	border-left: 0px solid;
+	background-color: #FFFFFF;
+
+}
+.factTotalTransac {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+.factLblTotalTransac {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-color: #EEEEEE;
+}
+.link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+	text-decoration: none;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #660000;
+	text-decoration: none;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #999999;
+	text-decoration: none;
+}
+
+.caja {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12pt;
+	text-decoration: none;
+	color: #000000;
+	font-weight: normal;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #999999;
+	border-right-color: #999999;
+	border-bottom-color: #999999;
+	border-left-color: #999999;
+
+
+
+}
+.cajaabajo {
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #CCCCCC;
+}
+
+body {
+scrollbar-face-color: #f1f1f1;
+scrollbar-shadow-color: #f1f1f1;
+scrollbar-highlight-color: #f1f1f1;
+scrollbar-3dlight-color: #;000000
+scrollbar-darkshadow-color: 000000;
+scrollbar-track-color: #cccccc;
+scrollbar-arrow-color: #000000
+}
+
+.titblanco{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#FFFFFF;
+	font-size:11pt;
+	font-weight:bold;
+	text-decoration: none;
+
+}
+
+ .letra {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color:#333333;
+	font-size:7pt;
+}
+
+.gris{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:8pt;
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+
+
+}
+
+.gris1{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:8pt;
+	background-color: #CAAFA6;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+
+
+}
+
+.gris2{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:8pt;
+	background-color: #FFFFFF;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #CCCCCC;
+	border-right-color: #CCCCCC;
+	border-bottom-color: #CCCCCC;
+	border-left-color: #CCCCCC;
+
+
+}
+
+.grisSubmenu{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:8pt;
+	background-color: #F1F1F1;
+	border-top: 1px none #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+
+
+}
+
+.ct {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #666666;
+	background-color: #FFFFFF;
+}
+
+.ctSombra {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+	height: 19px;
+	border: 1px solid #666666;
+	background-color: #D7D7D7;
+
+
+}
+
+.cajatotal {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	text-decoration: none;
+	border: 1px solid #CCCCCC;
+}
+.cNotas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: #000000;
+	text-decoration: none;
+	height: 12pt; 
+	border: 1px solid #666666;
+	width: 15pt;
+}
+.cajaMalla {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #333333;
+	text-decoration: none;
+	border: 1px solid #CCCCCC;
+	height: 50pt;
+}
+
+ 
+.a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #DBDAB5;
+	border: 1px solid #000000;
+	height: 30px;
+	width: 50px;
+
+
+}
+.reprobadas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	background-color: #C6D1FB;
+	border: 1px solid #000000;
+	height: 20px;
+
+}
+.notomadas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-color: #f1f1f1;
+	border: 1px solid #000000;
+	height: 30px;
+	width: 50px;
+
+
+}
+.portomar {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	background-color: #FFCC33;
+	border: 1px solid #000000;
+	height: 30px;
+	width: 50px;
+
+
+}
+
+.registradas {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	font-weight: normal;
+	text-decoration: none;
+	background-color: #006600;
+	border: 1px solid #000000;
+	height: 30px;
+	width: 50px;
+ 
+  
+}
+
+.prueba { 
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt; 
+	font-weight: normal;
+	text-decoration: none;
+	border: 0px none #F1F1F1;
+	background-color: #f1f1f1; 
+
+
+}
+/*Para el cargando*/
+#loading {
+	width: 200px;
+	height: 70px;
+	background-color: #FFFFFF;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -50px;
+	margin-left: -100px;
+	text-align: center;
+	border: 1px solid #999999;
+}
+.lineaborde {
+	border: 1px solid #000000;
+	font-size: 11px;
+}
+
+#tree1{
+	position:absolute;
+	width:200;
+	height: auto;
+	z-index:1;
+	border: 0px dashed #f1f1f1;
+	background-color:#ffffff;
+	left: 145px;
+	top: 275px;
+	visibility: visible;
+	display:block;
+	}
+	.nodecls
+	{
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:12px;
+		text-decoration:none;
+		color:#000000;
+	}
+
+/*  Estilos para AJAX Autocompletar  */
+
+/* style.css */
+body {
+font-family: verdana, arial, helvetica;
+font-size: 11px;
+color: #000000;
+}
+.formclass {
+position: absolute;
+left: 0px;
+top: 0px;
+visibility: hidden;
+height: 0px;
+width: 0px;
+background: #A2BAFA;
+border-style: solid;
+border-width: 1px;
+border-color: #000000;
+}
+.autocomp {
+position: absolute;
+left: 0px;
+top: 0px;
+visibility: hidden;
+width: 0px;
+}
+
+.taskboxclass {
+position: absolute;
+left: 0px;
+top: 0px;
+visibility: hidden;
+width: 0px;
+}
+.calendarover {
+text-align: center;
+background: #CAD7F9;
+width: 15px;
+}
+.calendaroff {
+text-align: center;
+background: #A2BAFA;
+width: 15px;
+}
+.calendartodayover {
+text-align: center;
+background: #FECE6E;
+width: 15px;
+}
+.taskchecker {
+width: 150px;
+background-color: #FFBC37;
+border-style: solid;
+border-color: #000000;
+border-width: 1px;
+}
+
+.tcpadding {
+padding: 10px;
+}
+.calendartodayoff {
+text-align: center;
+background: #FFBC37;
+width: 15px;
+}

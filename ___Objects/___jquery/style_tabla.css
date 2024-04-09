@@ -1,0 +1,131 @@
+/* CSS Reset   
+----------------------------------------------------------*/
+span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td 
+{
+	
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align:baseline;
+	
+	/*background: '';*/
+	/*background: url('../../images/topgrid.gif'); */
+}
+table 
+{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:8pt;
+	
+	
+}
+/* h1 style 
+----------------------------------------------------------*/
+
+
+/* Table style  
+----------------------------------------------------------*/
+table.tbl1
+{
+	width: 100%;
+}
+
+table.tbl1 thead
+{
+	background: #A3C2EA url('../../images/topFAZUL.gif') repeat-x scroll 0 0;
+	color: #f1f1f1;
+	width: 1%;
+}
+
+table.tbl1 tbody
+{
+	width: 100%;
+	
+}
+
+table.tbl1 tr td,
+table.tbl1 tr th
+{
+	border: solid 0.5px #f1f1f1;
+	/*margin: 0;
+	padding: 1px 0;*/
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	text-decoration: none;
+	/*color: #000000;*/
+	font-weight: normal;
+    border-top: 1px solid #CCCCCC;
+	border-right: 0px solid #CCCCCC;
+	border-bottom: 0px solid #CCCCCC;
+	border-left: 0px solid #CCCCCC;
+	
+}
+
+table.tbl1 tr td
+{
+	/*text-align: center;
+	background-color: #fff;
+	color: #444;*/
+}
+
+table.tbl1 tbody tr.alt td
+{
+	background-color: #f1f1f1; /*e4ecf7*/
+}
+
+table.tbl1 tr.over td,
+table.tbl1 tbody tr.alt.over td
+{
+
+/*#bcd4ec  	CODIGO ORIGINAL 
+background-color: #bcd4ec;
+	color: #000;
+*/
+
+	background-color: #3B5998;
+	color: #fff;
+}
+
+table.tbl1 a
+{
+	color: #2a4a73;
+	text-decoration: underline;
+}
+
+table.tbl1 a:hover
+{
+	text-decoration: none;
+}
+
+table.tbl1 a:visited
+{
+	color: #bccedc;
+}
+
+/* Define column widths 
+----------------------------------------------------------*/
+table.tbl1 td.id
+{
+	width: 100px;
+}
+table.tbl1 td.fname
+{
+	width: 100px;
+}
+table.tbl1 td.lname
+{
+	width: 100px;
+}
+table.tbl1 td.bdate
+{
+	width: 100px;
+}

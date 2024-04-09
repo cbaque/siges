@@ -1,0 +1,76 @@
+/* estilo general */
+.dtree {
+	FONT-SIZE: 9pt;
+	COLOR: #ffffff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	WHITE-SPACE: nowrap;
+	text-decoration: none;
+}
+.dtree IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; VERTICAL-ALIGN: middle; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+.dtree A {
+	COLOR: #0F4287;
+	TEXT-DECORATION: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.dtree A.node {
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	PADDING-TOP: 1px;
+	WHITE-SPACE: nowrap;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #ffffff;
+	text-decoration: none;
+}
+.dtree A.nodeSel {
+	PADDING-RIGHT: 1px;
+	PADDING-LEFT: 1px;
+	PADDING-BOTTOM: 1px;
+	PADDING-TOP: 1px;
+	WHITE-SPACE: nowrap;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #000000;
+}
+.dtree A.node:hover {
+	COLOR: #00AAFF;
+	TEXT-DECORATION: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.dtree A.nodeSel:hover {
+	COLOR: #00AAFF;
+	TEXT-DECORATION: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+.dtree A.nodeSel {
+	FONT-WEIGHT: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	color: #00AAFF;
+	text-decoration: none;
+}
+
+.bgpanel {
+	PADDING-LEFT: 2px; BACKGROUND-COLOR: #bababa
+}
+a.menu {
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#000000;
+	font-size:9pt;
+	text-decoration: none;	
+}
+
+
+a.menu:hover{
+	font-family: Arial, Helvetica, sans-serif, Tahoma, verdana;
+	color:#333333;
+	font-size:9pt;
+	text-decoration: none;
+}
+
