@@ -52,8 +52,26 @@ break;
         </li>
 
         <li class="nav-item">
-            <a class="nav-link" id="cronograma-tab" href="#Duran" onclick="changeTab('cronograma-tab'); generalJS('0','frmMeta|___sqlAjax.aspx|idTrama;idTrama|idArchivos|GET|&typ=3&id=<%=id%>&tab=3'); ">Cronograma</a>
+            <a class="nav-link" id="cronograma-tab" href="#Duran" onclick=" changeTab('cronograma-tab'); generalJS('0','frmMeta|___sqlAjax.aspx|idTrama;idTrama|idArchivos|GET|&typ=3&id=<%=id%>&tab=3'); ">Cronograma</a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="reportar-tab" href="#Quevedo" onclick="changeTab('reportar-tab'); generalJS('0','frmMeta|___sqlAjax1.aspx|idTrama;idTrama|idArchivos|GET|&typ=6&idR=<%=id_rrhh%>&tab=2'); ">Reportar</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="observaciones-tab" href="#Puembo" onclick="changeTab('observaciones-tab'); generalJS('0','frmMeta|___sqlAjax1.aspx|idTrama;idTrama|idArchivos|GET|&typ=9&id=<%=id%>&tab=4'); ">Observaciones</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="documentos-tab" href="#Ventas" onclick="changeTab('documentos-tab'); generalJS('0','frmMeta|archivos.aspx|idTrama;idTrama|idArchivos|GET|&typ=10&id=<%=id%>&tab=5'); ">Documentos</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link" id="historial-tab" href="#Historial" onclick="changeTab('historial-tab'); generalJS('0','frmMeta|___sqlAjax.aspx|idTrama;idTrama|idArchivos|GET|&typ=18&id=<%=id%>&tab=6'); ">Historial</a>
+        </li>
+
+
     </ul>
 
 <%--    <ul id="myTab1" class="nav nav-tabs">

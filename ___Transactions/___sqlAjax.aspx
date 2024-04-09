@@ -435,10 +435,15 @@ if (Session["sysEdicion"].ToString()=="1"){%>
 		 } 
 		%>
         </select>
-       </div><div style="float:left; width: 5%;">
-        <a href="#" class="btn btn-warning btn-xs" onclick="javascript: objSel=document.getElementById('cmdCoResp');var idSel=document.getElementById('idCoResponsable'); if (objSel.options.selectedIndex != -1 ){; var str=''; for (i=0; i<objSel.options.length; i++){ if(objSel.options[i].selected){ objSel.options[i] = null; }} for (i=0; i<objSel.options.length; i++){ str += objSel.options[i].value + '|'; } idSel.value = str.substr(0,(str.length-1)); } else { alert('Por favor, seleccione un responsable antes de Remover.'); }">X</a>   
-      
-      
+       </div>
+        <div style="float:left; width: 5%;">
+
+            <a href="#" onclick="javascript: objSel=document.getElementById('cmdCoResp');var idSel=document.getElementById('idCoResponsable'); if (objSel.options.selectedIndex != -1 ){; var str=''; for (i=0; i<objSel.options.length; i++){ if(objSel.options[i].selected){ objSel.options[i] = null; }} for (i=0; i<objSel.options.length; i++){ str += objSel.options[i].value + '|'; } idSel.value = str.substr(0,(str.length-1)); } else { alert('Por favor, seleccione un responsable antes de Remover.'); }" 
+                title="Eliminar">
+                <i class="bi bi-trash-fill fs-5 text-danger"></i>
+            </a>
+
+  
         <input name="idCoResponsable" type="hidden" id="idCoResponsable" value="<%=idP8%>" />
       </div>
     </span></td>
@@ -474,7 +479,8 @@ if (Session["sysEdicion"].ToString()=="1"){%>
 		%>
         </select>
         </div>
-        <div style="float:left; width: 5%;"> <a href="#" class="btn btn-warning btn-xs" onclick="javascript: objSel=document.getElementById('txtAsociadoSel');var idSel=document.getElementById('idAsociado'); if (objSel.options.selectedIndex != -1 ){; var str=''; for (i=0; i&lt;objSel.options.length; i++){ if(objSel.options[i].selected){ objSel.options[i] = null; }} for (i=0; i&lt;objSel.options.length; i++){ str += objSel.options[i].value + '|'; } idSel.value = str.substr(0,(str.length-1)); } else { alert('Por favor, seleccione un Asociado antes de Remover.'); }">X</a>
+        <div style="float:left; width: 5%;"> 
+            <a href="#" class="btn btn-warning btn-xs" onclick="javascript: objSel=document.getElementById('txtAsociadoSel');var idSel=document.getElementById('idAsociado'); if (objSel.options.selectedIndex != -1 ){; var str=''; for (i=0; i&lt;objSel.options.length; i++){ if(objSel.options[i].selected){ objSel.options[i] = null; }} for (i=0; i&lt;objSel.options.length; i++){ str += objSel.options[i].value + '|'; } idSel.value = str.substr(0,(str.length-1)); } else { alert('Por favor, seleccione un Asociado antes de Remover.'); }">X</a>
           <input name="idAsociado" type="hidden" id="idAsociado" value="<%=idP9%>" />
       </div>      </td>
     <td>&nbsp;</td>

@@ -3,6 +3,7 @@
 %>
 
 <%@ Page Language="C#" ContentType="text/html" ResponseEncoding="utf-8" %>
+<%@ Import Namespace="System.Configuration" %>
 
 <html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
 
@@ -145,7 +146,12 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Tr4ckPlan</title>
+    <title>
+        <% 
+            string systemName = ConfigurationManager.AppSettings["NAME_SYSTEM"];
+            Response.Write(systemName);
+        %>
+    </title>
 </head>
 <%
     string word_1 = ""; string word_2 = "";

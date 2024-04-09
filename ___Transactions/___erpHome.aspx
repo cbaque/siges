@@ -1,6 +1,7 @@
 ﻿<%@ Register TagPrefix="MnA" TagName="MenuArriba" Src="../___Interface/___vsecure.ascx" %>
 <%@ Register TagPrefix="MnL" TagName="Bloqueo" Src="../___Interface/___vlock.ascx" %>
 <%@ Register TagPrefix="MnI" TagName="MenuIzquierdo" Src="../___Interface/___vLeft.ascx" %>
+<%@ Import Namespace="System.Configuration" %>
 <MnL:Bloqueo ID="MLock" runat="server" />
 <MnA:MenuArriba ID="MTop" runat="server" />
 <%@ Import Namespace="System.Data" %>
@@ -28,7 +29,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Tr4ckPlan</title>
+    <title>
+            <%
+    string systemName = ConfigurationManager.AppSettings["NAME_SYSTEM"];
+    Response.Write(systemName);
+    %>
+    </title>
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../assets/dist/icon/bootstrap-icons.min.css">
 

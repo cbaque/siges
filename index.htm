@@ -1,4 +1,13 @@
-<title>Tr4ckPlan</title>
+<%@ Page Language="C#" %>
+<%@ Import Namespace="System.Configuration" %>
+
+
+<title>
+    <%
+    string systemName = ConfigurationManager.AppSettings["NAME_SYSTEM"];
+    Response.Write(systemName);
+    %>
+</title>
 <script>
     window.location = '63f295684975d3598c0c19e1a3709f25.aspx';
 </script>
