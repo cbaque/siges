@@ -1,7 +1,6 @@
 ﻿<%@ Register TagPrefix="MnA" TagName="MenuArriba" Src="../___Interface/___vsecure.ascx" %>
 <%@ Register TagPrefix="MnL" TagName="Bloqueo" Src="../___Interface/___vlock.ascx" %>
 <%@ Register TagPrefix="MnI" TagName="MenuIzquierdo" Src="../___Interface/___vLeft.ascx" %>
-<%@ Import Namespace="System.Configuration" %>
 <MnL:Bloqueo ID="MLock" runat="server" />
 <MnA:MenuArriba ID="MTop" runat="server" />
 <%@ Import Namespace="System.Data" %>
@@ -13,33 +12,23 @@
 <script src="../___Objects/___Client/___usingMd5.js"></script>
 <script src="../___Objects/___Client/___Md5.js"></script>
 <script src="../___Objects/___Client/jquery-ui.min.js"></script>
-<%--<link href="../___Objects/___Client/themes/flick/jquery-ui.min.css" rel="stylesheet" type="text/css">--%>
+<link href="../___Objects/___Client/themes/flick/jquery-ui.min.css" rel="stylesheet" type="text/css">
 
-<script src="../___Objects/___Client/___menu.js"></script>
-<%--<% if (Session["sysTema"].ToString()=="Blue") { %>
+
+<% if (Session["sysTema"].ToString()=="Blue") { %>
 <link href="../___css/tema1.css" rel="stylesheet" type="text/css">
 <script src="../___Objects/___Client/___menu.js"></script>
-    
 <%}%>
 <% if (Session["sysTema"].ToString()=="Black") { %>
 <link href="../___css/tema2.css" rel="stylesheet" type="text/css">
 <script src="../___Objects/___Client/___menu1.js"></script>
-<%}%>--%>
+<%}%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" data-bs-theme="dark">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>
-            <%
-    string systemName = ConfigurationManager.AppSettings["NAME_SYSTEM"];
-    Response.Write(systemName);
-    %>
-    </title>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../assets/dist/icon/bootstrap-icons.min.css">
-    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
-
+    <title>Sistema de Gestiones - SIGES</title>
     <script>
 
         function indice(parametros, divID) {
@@ -398,10 +387,11 @@
     </script>
 
     <style type="text/css">
-        .ui-datepicker {
-            font-size: 10pt !important
-        }
+    	.ui-datepicker {
+    		font-size: 10pt !important
+    	}
     </style>
+
 </head>
 <body onload="generalJS('0','frmMeta|graficoCentro.aspx|idTemp;idTemp|idHome|GET|&j0=<%=Request.QueryString["j0"]%>&j1=<%=Request.QueryString["j1"]%>');">
     <!--generalJS('0','frmMeta|___sqlAjax.aspx|idTemp;idTemp|idHome|GET|&typ=8')-->
@@ -424,128 +414,61 @@
 string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToString() :"-1";
         %>
 
-        <header  class="navbar sticky-top bg-dark flex-md-nowrap p-0 shadow" data-bs-theme="dark">
-
-            <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%">
-              <div class="container-fluid">
-                
-                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">
-
-                    <%
-		                switch (tipoEdicion){
-                        case "0":
-		                Response.Write("<a href='#' class='tooltip1'> Gestor: " +Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )"  +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
-		                break;
-		                case "1":
-		                Response.Write("<a href='#' class='tooltip1' > Analista: " + Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )" +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
-		                break;
-		                case "2":
-		                Response.Write("Admin: " + Session["sysNombreUsuario"]);
-		                break;
-		                }
-                    %> 
-
-                </a>
-
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-
-        </header>
-
-        <%--<table width="100%" border="0" cellspacing="0" cellpadding="0" id="tbHome" style="margin-top: 10px !important">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" id="tbHome" class="colorTema">
 
             <tr>
                 <td>
                     <table width="100%" border="0" cellpadding="0" cellspacing="0">
                         <tr>
                             <td width="75%" height="24" align="left">&nbsp; &nbsp;
-                            <%
-		                        switch (tipoEdicion){
-                                case "0":
-		                        Response.Write("<a href='#' class='tooltip1'> Gestor: " +Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )"  +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
-		                        break;
-		                        case "1":
-		                        Response.Write("<a href='#' class='tooltip1' > Analista: " + Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )" +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
-		                        break;
-		                        case "2":
-		                        Response.Write("Admin: " + Session["sysNombreUsuario"]);
-		                        break;
-		                        }
-                            %> 
-                            </td>
-                            
+          <%
+		 
+		 
+		 switch (tipoEdicion){
+         case "0":
+		 Response.Write("<a href='#' class='tooltip1'> Gestor: " +Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )"  +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
+		 break;
+		 case "1":
+		 Response.Write("<a href='#' class='tooltip1' > Analista: " + Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )" +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
+		 break;
+		 case "2":
+		 Response.Write("Admin: " + Session["sysNombreUsuario"]);
+		 break;
+		 }
+          %>      </td>
                             <td>
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                  Launch demo modal
-                                </button>
+                                <table border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                        <td><a href="#" style="font-family: Arial, Helvetica, sans-serif; font-size: 11pt; color: #FFFFFF;" onclick="javascript: window.location='../___Transactions/___erpHome.aspx?j0=0&j1=';" title="Ir a la Pagina Principal">Inicio</a>&nbsp;</td>
+                                        <td><a href="#" onclick="javascript: window.location='../___Transactions/___erpHome.aspx?j0=0&j1=';" title="Ir a la Pagina Principal">
 
-                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                    <div class="modal-content">
-                                      <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                      </div>
-                                      <div class="modal-body">
-                                        ...
-                                      </div>
-                                      <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
+                                            <% if (Session["sysTema"].ToString()=="Blue") { %>
+                                            <img src="../___Images/principal.gif" width="33" height="29" border="0" />
+                                            <%}%>
+                                            <% if (Session["sysTema"].ToString()=="Black") { %>
+                                            <img src="../___Images/principal1.gif" border="0" />
+                                            <%}%>
+    
+    
+    
+                                        </a></td>
+                                    </tr>
+                                </table>
                             </td>
 
-
-                            <td width="5%" height="24" align="left">
-                                <a href="#" onclick="javascript: window.location='../___Transactions/___erpHome.aspx?j0=0&j1=';" title="Ir a la Pagina Principal">
-                                    <i class="bi bi-house-door-fill fs-5 text-white"></i>
-                                </a>
-                            </td>
-
-                            <td width="5%" height="24" align="left">
+                            <td width="100" align="right">
                                 <div class="dropdownM" id="drop1" style="z-index: 10">
-                                    <a href="#">
-                                        <i class="bi bi-list fs-5 text-white" id="btn1"></i>
-                                    </a>
+                                    <button class="dropbtn" id="btn1" type="button">Herramientas</button>
                                     <div class="dropdownM-content" id="listaID1">
 
                                         <a href="#" data-toggle='modal' data-target='#validador' data-whatever='@getbootstrap' onclick="javascript: exampleModalLabel.innerHTML='Buscar Disposiciones'; generalJS('0','frmMeta|___sqlAjax1.aspx|idTemp;idTemp|idValidador|GET|&q=t&typ=15');">Buscar</a>
 
                                         <a href="#" onclick="javascript: generalJS('0','frmMeta|___sqlAjax2.aspx|idTemp;idTemp|idHome|GET|&typ=0'); ">Gestionar Reportes</a>
-
+                                        <!-- abrirVentana('reporteGrafico.aspx?typ=19','hijo123','status=yes,width=1250,height=600'); -->
 
                                         <% if (tipoEdicion=="1"){ %>
 
+                                        <!--<a href="#" onClick="javascript: abrirVentana('reporteGrafico.aspx?typ=19','hijo123','status=yes,width=1250,height=600');" > Reporte Resum.</a>-->
 
 
                                         <a href="#" onclick="javascript:  generalJS('0','frmMeta|___sqlAjax1.aspx|idTemp;idTemp|idHome|GET|&typ=17');">Gestionar Usuarios</a>
@@ -557,33 +480,61 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
                                     </div>
                                 </div>
                             </td>
-                            <td width="5%" height="24" align="left">
+                            <td width="150">
                                 <div class="dropdownM" id="drop2" style="z-index: 10">
-                                    <a href="#"><i class="bi bi-gear-fill fs-5 text-white" id="btn2"></i></a>
+                                    <button class="dropbtn" id="btn2" type="button">Configuraci&oacute;n</button>
                                     <div class="dropdownM-content" id="listaID2">
                                         <a href="#" data-toggle='modal' data-target='#validador' data-whatever='@getbootstrap' onclick="javascript: exampleModalLabel.innerHTML='Cambio de Clave'; generalJS('0','frmMeta|___cambioClave.aspx|idTemp;idTemp|idValidador|GET|&typ=');">Cambio de Clave</a>
 
                                         <a href="#" data-toggle='modal' data-target='#validador' data-whatever='@getbootstrap' onclick="javascript: exampleModalLabel.innerHTML='Registro de Correos'; generalJS('0','frmMeta|___registrarCorreo.aspx|idTemp;idTemp|idValidador|GET|&typ=R'); ">Registrar Correo</a>
 
+                                        <a href="#" onclick="javascript: generalJS('0','frmMeta|___sqlAjax1.aspx|idTemp;idTemp|idValidador|GET|&typ=32&col=Blue&tab=E');  ">Tema Azul 
+            <% if (Session["sysTema"].ToString()=="Blue") { %>
+                                            <img src="../___Images/check.gif" />
+                                            <%}%>            
+                                        </a>
+
+                                        <a href="#" onclick="javascript: generalJS('0','frmMeta|___sqlAjax1.aspx|idTemp;idTemp|idValidador|GET|&typ=32&col=Black&tab=E'); ">Tema Gris
+            <% if (Session["sysTema"].ToString()=="Black") { %>
+                                            <img src="../___Images/check.gif" />
+                                            <%}%>
+                                        </a>
+                                        <!-- <%// if (tipoEdicion=="1"){ %>
+          <a href="#"  data-toggle='modal' data-target='#validador' data-whatever='@getbootstrap' onClick="javascript: exampleModalLabel.innerHTML='Registro de Correos'; generalJS('0','frmMeta|___registrarCorreo.aspx|idTemp;idTemp|idValidador|GET|&typ=2');">Nueva Clave</a>
+          <%// }%> -->
                                     </div>
                                 </div>
                             </td>
 
-                            <td width="5%" height="24" align="left">
 
-                                <a href="#" onclick="javascript: window.location='../___Interface/___destroyApp.aspx?p=true';" title="Salir">
-                                    <i class="bi bi-box-arrow-right fs-5 text-white"></i>
-                                </a>
+                            <td width="50">
+                                <div class="dropdownM" id="drop4" style="z-index: 10">
+                                    <button class="dropbtn" id="btn4" type="button">Ayuda</button>
+                                    <div class="dropdownM-content" id="listaID4">
 
+                                        <a href="#" onclick="javascript: abrirVentana('manualGestor.pdf','manual54321','status=yes,width='+ (screen.width-50) +',height='+ (screen.height-100) +'');">Manual de Usuario</a>
+
+                                        <% if (tipoEdicion=="1"){ %>
+                                        <a href="#" onclick="javascript: abrirVentana('manualAdministrador.pdf','manual54321','status=yes,width='+ (screen.width-50) +',height='+ (screen.height-100) +'');">Manual de Administrador</a>
+                                        <%}%>
+
+                                        <a href="#" onclick="javascript: abrirVentana('manualPolitica.pdf','manualPol54321','status=yes,width='+ (screen.width-50) +',height='+ (screen.height-100) +'');">Manual de Pol&iacute;ticas</a>
+
+                                    </div>
+                                </div>
                             </td>
-                            
+                            <td width="50">
+                                <div class="dropdownM" id="drop5" style="z-index: 10">
+                                    <button class="dropbtn" id="btn5" type="button" onmousemove="javascript: indice('../___Interface/___destroyApp.aspx?p=true;Cerrar sesion','listaID5');">Salir</button>
+                                    <div class="dropdownM-content" id="listaID5"></div>
+                                </div>
+                            </td>
+                            <td width="10%" align="right">&nbsp;</td>
                         </tr>
                     </table>
                 </td>
             </tr>
-        </table>--%>
-
-        <div class="container-fluid">
+        </table>
         <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
                 <td width="250px" valign="top">
@@ -595,6 +546,12 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
                 </td>
                 <td width="84%" valign="top">
 
+                    <!-- <div class="panel panel-default" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+  <div class="panel-body">
+    Panel content
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>-->
 
                     <br>
 
@@ -603,53 +560,7 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
                 </td>
             </tr>
         </table>
-
-        </div>
     </form>
-
-    <script>
-
-        // Selecciona el elemento que desencadena el dropdown
-        var dropdownTrigger = document.querySelector('.nav-link.dropdown-toggle');
-
-        // Selecciona el menú desplegable correspondiente
-        var dropdownMenu = document.querySelector('.dropdown-menu');
-
-        // Agrega un evento de clic al elemento que desencadena el dropdown
-        dropdownTrigger.addEventListener('click', function (event) {
-            // Evita que el enlace se comporte como un enlace normal
-            event.preventDefault();
-
-            // Alternar la clase 'show' en el menú desplegable para mostrar u ocultar el dropdown
-            dropdownMenu.classList.toggle('show');
-        });
-
-        // Cierra el dropdown cuando se hace clic fuera de él
-        window.addEventListener('click', function (event) {
-            if (!event.target.matches('.nav-link.dropdown-toggle')) {
-                // Si el clic no fue en el elemento que desencadena el dropdown, oculta el menú desplegable
-                dropdownMenu.classList.remove('show');
-            }
-        });
-
-
-
-    </script>
-
-<%--    <script>
-
-        var myModalTrigger = document.querySelector('[data-bs-toggle="modal"]');
-
-        // Selecciona el modal que deseas abrir
-        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-
-        // Agrega un evento de clic al botón para abrir el modal
-        myModalTrigger.addEventListener('click', function () {
-            myModal.show();
-        });
-
-
-    </script>--%>
 
 </body>
 </html>

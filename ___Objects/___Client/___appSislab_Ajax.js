@@ -40,7 +40,6 @@ function createAjaxObject() {
 
 //function sendUrls(url,po_method,po_div){
   function generalJS(opcion,parametros){
-	
 	/*	 enviar datos	
     - opcion 0 = tomar valors que vienen desde un formuario	
 	- opcion 1 = buscador generalizado en una nueva ventana
@@ -94,7 +93,8 @@ function createAjaxObject() {
 		   *************************************************************************************/
 							
 			var lo_container;
-			lo_container = document.getElementById(divId);			
+			lo_container = document.getElementById(divId);	
+			console.log(lo_container);
 			
 			var lo_ajax=createAjaxObject();
 			lo_container.innerHTML= '<img src="../___Images/cargando.gif" align="center" >&nbsp;Por favor Espere..';
