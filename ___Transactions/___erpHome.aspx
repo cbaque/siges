@@ -429,7 +429,7 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
             <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%">
               <div class="container-fluid">
                 
-                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">
+<%--                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">
 
                     <%
 		                switch (tipoEdicion){
@@ -445,33 +445,74 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
 		                }
                     %> 
 
-                </a>
+                </a>--%>
+
+                  <a class="navbar-brand" href="#">
+                        <small class="text-body-secondary" style="font-size: 12px !important">
+
+                            <%
+		                        switch (tipoEdicion){
+                                case "0":
+		                        Response.Write("<a href='#' class='tooltip1'> Gestor: " +Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )"  +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
+		                        break;
+		                        case "1":
+		                        Response.Write("<div data-bs-toggle='tooltip' data-bs-title='Delegado: " + Session["sysUsuarioAsociado"] + " ' data-bs-placement='bottom'>  Analista: " + Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" ) </div> ");
+		                        break;
+		                        case "2":
+		                        Response.Write("Admin: " + Session["sysNombreUsuario"]);
+		                        break;
+		                        }
+                            %> 
+
+
+                        </small>
+
+                  </a>
 
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#" onclick="javascript: window.location='../___Transactions/___erpHome.aspx?j0=0&j1=';" title="Ir a la Pagina Principal">
+                            <i class="bi bi-house-door-fill fs-5 text-white"></i>
+                        </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Pricing</a>
-                    </li>
+
+
                     <li class="nav-item dropdown">
                       <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
+                        Herramientas
                       </a>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="#">Buscar</a></li>
+                        <li><a class="dropdown-item" href="#">Gestionar Reportes</a></li>
+                        <li><a class="dropdown-item" href="#">Gestionar Usuarios</a></li>
+                        <li><a class="dropdown-item" href="#">Gestionar Cadenas</a></li>
+                        <li><a class="dropdown-item" href="#">Nueva Disposici&oacute;n</a></li>
+                        <li><a class="dropdown-item" href="#">Descartar Disposici&oacute;n</a></li>
                       </ul>
                     </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Configuraci&oacute;n
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Cambio de Clave</a></li>
+                        <li><a class="dropdown-item" href="#">Registrar Correo</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="#" onclick="javascript: window.location='../___Interface/___destroyApp.aspx?p=true';" title="Salir">
+                            <i class="bi bi-box-arrow-right fs-5 text-white"></i>
+                        </a>
+                    </li>
+
                   </ul>
                 </div>
               </div>
@@ -631,6 +672,11 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
                 dropdownMenu.classList.remove('show');
             }
         });
+
+
+
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
 
 
