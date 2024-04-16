@@ -420,6 +420,8 @@
                 </div>
             </div>
         </div>
+
+
         <%
 string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToString() :"-1";
         %>
@@ -428,24 +430,6 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
 
             <nav class="navbar navbar-expand-lg bg-body-tertiary" style="width: 100%">
               <div class="container-fluid">
-                
-<%--                <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6 text-white" href="#">
-
-                    <%
-		                switch (tipoEdicion){
-                        case "0":
-		                Response.Write("<a href='#' class='tooltip1'> Gestor: " +Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )"  +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
-		                break;
-		                case "1":
-		                Response.Write("<a href='#' class='tooltip1' > Analista: " + Session["sysNombreUsuario"]+ " ( "+ Session["sysDireccion"] +" )" +"<span>Delegado: "+Session["sysUsuarioAsociado"]+"</span></a>");
-		                break;
-		                case "2":
-		                Response.Write("Admin: " + Session["sysNombreUsuario"]);
-		                break;
-		                }
-                    %> 
-
-                </a>--%>
 
                   <a class="navbar-brand" href="#">
                         <small class="text-body-secondary" style="font-size: 12px !important">
@@ -463,7 +447,6 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
 		                        break;
 		                        }
                             %> 
-
 
                         </small>
 
@@ -491,7 +474,7 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
                         <li><a class="dropdown-item" href="#">Gestionar Reportes</a></li>
                         <li><a class="dropdown-item" href="#">Gestionar Usuarios</a></li>
                         <li><a class="dropdown-item" href="#">Gestionar Cadenas</a></li>
-                        <li><a class="dropdown-item" href="#">Nueva Disposici&oacute;n</a></li>
+                        <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#validador" onclick="javascript: exampleModalLabel.innerHTML='Nueva Disposici&oacute;n'; generalJS('0','frmMeta|___disposiciones.aspx|idTemp;idTemp|idValidador|GET|&typ=');">Nueva Disposici&oacute;n</a></li>
                         <li><a class="dropdown-item" href="#">Descartar Disposici&oacute;n</a></li>
                       </ul>
                     </li>
@@ -650,29 +633,39 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
 
     <script>
 
-        // Selecciona el elemento que desencadena el dropdown
-        var dropdownTrigger = document.querySelector('.nav-link.dropdown-toggle');
+        // Selecciona todos los elementos que desencadenan los dropdowns
+        var dropdownTriggers = document.querySelectorAll('.nav-link.dropdown-toggle');
 
-        // Selecciona el menú desplegable correspondiente
-        var dropdownMenu = document.querySelector('.dropdown-menu');
+        // Agrega un evento de clic a cada elemento que desencadena un dropdown
+        dropdownTriggers.forEach(function (dropdownTrigger) {
+            dropdownTrigger.addEventListener('click', function (event) {
+                // Evita que el enlace se comporte como un enlace normal
+                event.preventDefault();
 
-        // Agrega un evento de clic al elemento que desencadena el dropdown
-        dropdownTrigger.addEventListener('click', function (event) {
-            // Evita que el enlace se comporte como un enlace normal
-            event.preventDefault();
+                // Selecciona el menú desplegable correspondiente al elemento que se hizo clic
+                var dropdownMenu = dropdownTrigger.nextElementSibling;
 
-            // Alternar la clase 'show' en el menú desplegable para mostrar u ocultar el dropdown
-            dropdownMenu.classList.toggle('show');
+                // Cierra todos los menús desplegables antes de abrir el actual
+                closeAllDropdowns();
+
+                // Alternar la clase 'show' en el menú desplegable para mostrar u ocultar el dropdown
+                dropdownMenu.classList.toggle('show');
+            });
         });
 
-        // Cierra el dropdown cuando se hace clic fuera de él
+        // Cierra todos los dropdowns
+        function closeAllDropdowns() {
+            document.querySelectorAll('.dropdown-menu').forEach(function (dropdownMenu) {
+                dropdownMenu.classList.remove('show');
+            });
+        }
+
+        // Cierra los dropdowns cuando se hace clic fuera de ellos
         window.addEventListener('click', function (event) {
             if (!event.target.matches('.nav-link.dropdown-toggle')) {
-                // Si el clic no fue en el elemento que desencadena el dropdown, oculta el menú desplegable
-                dropdownMenu.classList.remove('show');
+                closeAllDropdowns();
             }
         });
-
 
 
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -682,20 +675,6 @@ string tipoEdicion = Session["sysEdicion"]!=null ? Session["sysEdicion"].ToStrin
 
     </script>
 
-<%--    <script>
-
-        var myModalTrigger = document.querySelector('[data-bs-toggle="modal"]');
-
-        // Selecciona el modal que deseas abrir
-        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
-
-        // Agrega un evento de clic al botón para abrir el modal
-        myModalTrigger.addEventListener('click', function () {
-            myModal.show();
-        });
-
-
-    </script>--%>
 
 </body>
 </html>

@@ -12,39 +12,7 @@ dbEstadoDisposicion = new ComboLista("cmbEstadoDisposicion", "0", "exec SP_DISPO
 ComboLista dbNaturalezaDisposicion;
 dbNaturalezaDisposicion = new ComboLista("cmbNaturalezaDisposicion", "0", "exec SP_DISPOSICIONES 2,null,null,'A'", "", "", "", "cajaFormulario", "0", "");
 %>
-
-<div class="container">
-    <div class="mb-3 row ms-3 me-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Disposici&oacute;n</label>
-        <textarea class="form-control" name="txtNombreI" id="txtNombreI" rows="2"></textarea>
-    </div>
-
-    <div class="mb-3 row ms-3 me-3">
-        <label for="cmbEstadoDisposicionI" class="form-label">Estado</label>
-          <%		
-		    dbEstadoDisposicion.Nombre=("cmbEstadoDisposicionI");
-			dbEstadoDisposicion.CssCmb="form-select form-select-sm";
-			Response.Write(dbEstadoDisposicion.cargarComboLista());
-		%>
-    </div>
-
-    <div class="mb-3 row ms-3 me-3">
-        <label for="cmbTipoDisposicionI" class="form-label">Tipo</label>
-          <%		
-		    dbTipoDisposicion.Nombre=("cmbTipoDisposicionI");
-			dbTipoDisposicion.CssCmb="form-select form-select-sm";
-			dbTipoDisposicion.Events=("onchange=' javascrit: var element1 = document.createElement(\"input\"); element1.type = \"hidden\"; element1.value = \"null\"; element1.name = \"cmbCabPlanti\"; document.getElementById(\"idPlanti\").innerHTML=null; this.value ==\"4\"? generalJS(\"0\",\"frmMeta|___sqlAjax3.aspx|cmbTipoDisposicionI;cmbTipoDisposicionI|idPlanti|GET|&typ=50\") : document.getElementById(\"idPlanti\").appendChild(element1);' ");
-			Response.Write(dbTipoDisposicion.cargarComboLista());
-		%>
-
-        <div id="idPlanti" style='float:left;width: 178px;'></div>
-    </div>
-</div>
-
-
-
-
-<%--<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"  >
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0"  >
   <tr>
     <td><div align="right" class="detalleDisposicion">Disposici&oacute;n:</div></td>
     <td width="56%"><span class="Estilo7">
@@ -176,7 +144,7 @@ dbNaturalezaDisposicion = new ComboLista("cmbNaturalezaDisposicion", "0", "exec 
     <td align="center"><button type='button' class="btn btn-primary" onclick="javascript: if (validateForm('frmMeta|txtNombreI;R|cmbEstadoDisposicionI;R|cmbTipoDisposicionI;R|txtDetalleI;R|txtFInicialI;R|txtFFinalI;B|txtResponsableI;B|cmbNaturalezaDisposicionI;R|txtAnalistaI;R|txtAntecedentesI;B|txtObservacionI;B')){generalJS('0','frmMeta|___sqlAjax.aspx|cmbEstadoDisposicionI;cmbTipoDisposicionI;cmbNaturalezaDisposicionI;idResponsableI;idCoResponsableI;idAsociadoI;txtNombreI;txtDetalleI;txtFInicialI;txtFFinalI;idAnalistaI;txtAntecedentesI;txtObservacionI;progresoI;cmbCabPlanti|idRegistroDisposicion|GET|&typ=7');}" >Guardar</button>
     <div align="center"></div></td>
   </tr>
-</table>--%>
+</table>
 
    
  
