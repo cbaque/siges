@@ -15,7 +15,7 @@ dbNaturalezaDisposicion = new ComboLista("cmbNaturalezaDisposicion", "0", "exec 
 
 <div class="container">
     <div class="mb-3 row ms-3 me-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Disposici&oacute;n</label>
+        <label for="txtNombreI" class="form-label">Disposici&oacute;n</label>
         <textarea class="form-control" name="txtNombreI" id="txtNombreI" rows="2"></textarea>
     </div>
 
@@ -38,6 +38,11 @@ dbNaturalezaDisposicion = new ComboLista("cmbNaturalezaDisposicion", "0", "exec 
 		%>
 
         <div id="idPlanti" style='float:left;width: 178px;'></div>
+    </div>
+
+    <div class="mb-3 row ms-3 me-3">
+        <label for="txtDetalleI" class="form-label">Detalle</label>
+        <textarea class="form-control" name="txtDetalleI" id="txtDetalleI" rows="2"></textarea>
     </div>
 </div>
 
